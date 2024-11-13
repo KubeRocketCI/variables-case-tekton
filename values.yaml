@@ -1,0 +1,5 @@
+nameOverride: ""
+fullnameOverride: ""
+
+global:
+  dnsWildCard: "eks-sandbox.aws.main.edp.projects.epam.com"
