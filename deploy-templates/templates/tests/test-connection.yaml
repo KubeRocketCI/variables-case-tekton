@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "custom-tekton-chart.fullname" . }}-test-connection"
+  labels:
+    {{- include "custom-tekton-chart.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "custom-tekton-chart.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
