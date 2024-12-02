@@ -27,6 +27,6 @@ Custom Tekton Chart
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| dnsWildCard | string | `""` |  |
 | fullnameOverride | string | `""` |  |
-| global.dnsWildCard | string | `""` |  |
 | nameOverride | string | `""` |  |
