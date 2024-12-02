@@ -13,7 +13,3 @@ maintainers:
     url: https://github.com/SergK
 sources:
   - https://github.com/epam/helm-helm-pipeline
-dependencies:
-  - name: edp-tekton-common-library
-    version: 0.3.6
-    repository: "https://epam.github.io/edp-helm-charts/stable"
