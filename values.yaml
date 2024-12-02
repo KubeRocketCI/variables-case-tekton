@@ -1,5 +1,4 @@
 nameOverride: ""
 fullnameOverride: ""
 
-global:
-  dnsWildCard: ""
+dnsWildCard: ""
